@@ -13,8 +13,10 @@ namespace Lighting
                 NativeMethods.SetThreadExecutionState(esFlags);
                 Console.WriteLine("Enable always lighting...");
                 Console.WriteLine();
-                Console.WriteLine("  Press [Esc] to exit...");
-                while (Console.ReadKey(true).Key == ConsoleKey.Escape) break;
+                do
+                {
+                    Console.WriteLine("  Press [Esc] to exit...");
+                } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
             }
             finally
             {
