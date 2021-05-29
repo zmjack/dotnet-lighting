@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Lighting</RootNamespace>
+    <PackageId>dotnet-lighting</PackageId>
+    <PackageType>DotnetCliTool</PackageType>
+    <PackAsTool>true</PackAsTool>
+    <Authors>zmjack</Authors>
+    <Description>Keep display always lighting.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/zmjack/dotnet-lighting</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zmjack/dotnet-lighting</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>lighting</PackageTags>
+    <Copyright>Copyright © nstandard.net 2021</Copyright>
+    <Company>nstandard.net</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+</Project>
